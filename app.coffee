@@ -13,6 +13,7 @@ class TimeSlot
         "\nDTEND:" + (@_ISODateString @to) +
         "\nSUMMARY:" + @title +
         "\nLOCATION:" + @room +
+        "\nRRULE:FREQ=WEEKLY" + 
         "\nEND:VEVENT"
 
     _ISODateString: (date) ->
