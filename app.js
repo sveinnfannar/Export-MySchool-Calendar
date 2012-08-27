@@ -65,8 +65,9 @@
             title = span.attr("title").split("\n");
             title = title[0] + " - " + title[2];
             date = dates[cindex - 1];
-            from = Date.parse(date + " " + time[0]);
-            to = Date.parse(date + " " + time[1]);
+            from = Date.parseExact(date + " " + time[0], "dd.MM.yyyy HH:mm");
+            to = Date.parseExact(date + " " + time[1], "dd.MM.yyyy HH:mm");
+            console.log(date + " " + time[0] + " = " + from);
             return days[cindex - 1].push(new TimeSlot(from, to, title, room));
           });
         });

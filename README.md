@@ -7,20 +7,29 @@ It works by adding an "Export Calendar" button above the calendar in MySchool, w
 
 Install
 -------
-Bring up the extensions management page by clicking the wrench icon and choosing Tools > Extensions.
-If Developer mode has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.
-Click the Load unpacked extension button. A file dialog appears.
-In the file dialog, navigate to your extension's folder and click OK.
+Bring up the extensions management page by clicking the wrench icon and choosing Tools > Extensions.  
+If Developer mode has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.  
+Click the Load unpacked extension button. A file dialog appears.  
+In the file dialog, navigate to your extension's folder and click OK.  
+
+Use
+---
+###Import to Google Calendar
+Click the down-arrow next to Other calendars.  
+Select Import calendar.  
+Click Choose file and find the file that contains your events, then click Open.  
+Select the Google Calendar where you'd like to import events, then click Import.  
+
+###Import to Apple iCal
+Simply open the ics file and iCal should offer to import the events.
 
 Contribute
 ----------
 The only thing you have to do to contribute is to have [CoffeeScript][2] installed to compile app.coffee and probably have access to Reykjavík University's MySchool system for testing.
 
-Todo
-----
+###Todo
 * Support for repeating classes week after week
 * And a lot of other stuff..
-
 
 Licence
 -------
