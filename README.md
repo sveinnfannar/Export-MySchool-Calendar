@@ -24,8 +24,8 @@ Todo
 
 Licence
 -------
-This software is protected under the Simplified BSD License.
+This software is protected under the Simplified BSD License.  
 Author: Sveinn Fannar Kristjánsson, sveinnfannar@gmail.com
 
-    [1]: http://en.wikipedia.org/wiki/ICalendar
-    [2]: http://coffeescript.org/
+[1]: http://en.wikipedia.org/wiki/ICalendar
+[2]: http://coffeescript.org/
