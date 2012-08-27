@@ -1,16 +1,12 @@
 {
-  "name": "My First Extension",
-  "version": "1.0",
+  "name": "Export MySchool Calendar",
+  "version": "0.1",
   "manifest_version": 2,
-  "description": "The first extension that I made.",
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "app.html"
-  },
+  "description": "An extention to MySchool to export the calendar to iCalendar(ics) format.",
   "content_scripts": [
     {
       "matches": ["https://myschool.ru.is/myschool/?Page=Exe&ID=3.2*"],
-      "js": ["jquery.min.js", "date.js", "base64.js", "modal.popup.js", "app.js"]
+      "js": ["jquery.min.js", "date.js", "base64.js", "fileSaver.min.js", "blobBuilder.min.js", "app.js"]
     }
   ],
   "web_accessible_resources": ["app.html", "loading.gif"]
