@@ -31,6 +31,7 @@ The only thing you have to do to contribute is to have [CoffeeScript][2] install
 * ~~Support for repeating classes week after week untill end of semester~~
 * Test with older versions of Chrome
 * Test with more applications than just Google Calendar and iCal
+* Smart repeat (Rather then repeat events to infinity, only repeat until end of semester)
 * And a lot of other stuff..
 
 Licence
