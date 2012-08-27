@@ -19,7 +19,7 @@ The only thing you have to do to contribute is to have [CoffeeScript][2] install
 Todo
 ----
 * Support for repeating classes week after week
-* And a lot of other stuff
+* And a lot of other stuff..
 
 
 Licence
