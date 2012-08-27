@@ -87,35 +87,14 @@ class Calendar
 
 
 # Parse the DOM
-$("button#make").live "click", ->
-    #cal = new Calendar
-    #cal.parseCalendaDOM()
-    #data = cal.exportToIcal()
-    console.log data
-    #href = '<a href="data:text/calendar;charset=utf-8;base64,' + Base64.encode(data) + '">ics file</a><br/>'
-    #$("body").append(href)
-
-$("div.ruContentPage").prepend "<div align=\"center\" style=\"margin-left: 660px;\"><button type=\"button\" id=\"parse_calendar\">Export calendar</button></div>"
-
-# Display popup
 $("button#parse_calendar").live "click", ->
-    source = chrome.extension.getURL "app.html"
-    width = 920
-    align = "center"
-    top = 100
-    padding = 10
-    backgroundColor = "#FFFFFF"
-    borderColor = "#000000"
-    borderWeight = 4
-    borderRadius = 5
-    disableColor = "#666666"
-    disableOpacity = 40
-    loadingImage = chrome.extension.getURL "loading.gif"
-    modalPopup align, top, width, padding, disableColor, disableOpacity, backgroundColor, borderColor, borderWeight, borderRadius, fadeOutTime, source, loadingImage
+    cal = new Calendar
+    cal.parseCalendaDOM()
+    data = cal.exportToIcal()
+    bb = new BlobBuilder
+    bb.append data
+    saveAs bb.getBlob ("text/calendar;charset=" + document.characterSet), "calendar.ics"
 
-
-#This method hides the popup when the escape key is pressed
-$(document).keyup (e) ->
-    fadeOutTime = 300
-    closePopup fadeOutTime if e.keyCode is 27
+# Add the export button above the calendar in MySchool
+$("div.ruContentPage").prepend "<div align=\"center\" style=\"margin-left: 660px;\"><button type=\"button\" id=\"parse_calendar\">Export calendar</button></div>"
 
