@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://myschool.ru.is/myschool/?Page=Exe&ID=3.2*"],
-      "js": ["jquery.min.js", "date.js", "base64.js", "fileSaver.min.js", "blobBuilder.min.js", "app.js"]
+      "js": ["jquery.min.js", "date.js", "fileSaver.min.js", "blobBuilder.min.js", "app.js"]
     }
   ],
   "web_accessible_resources": ["app.html", "loading.gif"]
