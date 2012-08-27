@@ -28,7 +28,7 @@ Contribute
 The only thing you have to do to contribute is to have [CoffeeScript][2] installed to compile app.coffee and probably have access to Reykjavík University's MySchool system for testing.
 
 ###Todo
-* Support for repeating classes week after week untill end of semester
+* ~~Support for repeating classes week after week untill end of semester~~
 * Test with older versions of Chrome
 * Test with more applications than just Google Calendar and iCal
 * And a lot of other stuff..
